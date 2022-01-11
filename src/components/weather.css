@@ -10,8 +10,37 @@
 
 body{
     font-family: var(--font-family-body);
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../media/trees.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    color: #fff;
+
 }
 
 .title{
     font-family: var(--font-family-title) !important;
+}
+
+form input{
+    padding: 0.5em;
+    border: none;
+    outline: none;
+}
+
+
+
+form button{
+    padding: 0.5em;
+    color: #333;
+    background: #ccc;
+    /* border-radius: 0px 3px 3px 0px; */
+    border: none;
+    outline: none;
+}
+
+.weather-details {
+    display: flex;
+    justify-content: center;
+    padding: 2rem 0;
 }

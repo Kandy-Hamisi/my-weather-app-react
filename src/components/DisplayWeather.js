@@ -9,7 +9,7 @@ function DisplayWeather(props) {
 
     return (
         <div className="displayWeather">
-            { data.cod != 404 ? (
+            { data.cod !== 404 ? (
                 <React.Fragment>
                     <div className="myCard">
                         <span className="card-title">
@@ -32,7 +32,7 @@ function DisplayWeather(props) {
                     </div>
                     <div className="weather-details">
                         <div className="section1">
-                            <table>
+                            <table border="1">
                                 <tbody>
                                     <tr>
                                         <td>

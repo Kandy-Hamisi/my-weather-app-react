@@ -73,7 +73,7 @@ function Weather() {
             </section>
 
             {
-                weather.data != undefined ?
+                weather.data !== undefined ?
 
                 <div>
                     <DisplayWeather data={weather.data } />
