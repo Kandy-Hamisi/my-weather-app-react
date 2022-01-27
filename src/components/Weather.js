@@ -14,7 +14,7 @@ function Weather() {
 
     async function weatherData(e){
         e.preventDefault();
-        if (form.city == "") {
+        if (form.city === "") {
             alert("Add Value!!");
         }else{
             const data = await fetch(
@@ -35,10 +35,10 @@ function Weather() {
         let name = e.target.name;
         let value = e.target.value;
 
-        if(name == "city"){
+        if(name === "city"){
             setForm({...form, city:value})
         }
-        if (name == "country") {
+        if (name === "country") {
             setForm({...form, country:value})
         }
     }
@@ -49,7 +49,7 @@ function Weather() {
             <h1 className="title app-title">Weather</h1>
             
             <section className="form-section">
-                <form>
+                <form className='myForm'>
                     <input
                      type="text" 
                      name="city" 

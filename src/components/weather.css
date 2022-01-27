@@ -18,6 +18,12 @@ body{
 
 }
 
+@media (max-width: 375px) {
+    body {
+        background-repeat: no-repeat;
+    }
+}
+
 .title{
     font-family: var(--font-family-title) !important;
 }
@@ -43,4 +49,20 @@ form button{
     display: flex;
     justify-content: center;
     padding: 2rem 0;
+}
+
+.myCard {
+    display: flex;
+    flex-direction: column;
+}
+
+@media (max-width: 375px) {
+    .myForm {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .myForm > * {
+        margin-bottom: 10px;
+    }
 }

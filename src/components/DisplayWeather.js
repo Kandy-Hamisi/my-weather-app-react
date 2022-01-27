@@ -1,11 +1,13 @@
 import React from 'react'
 import '../App.css';
+
+
 function DisplayWeather(props) {
 
     const {data} = props;
     console.log(data);
     const iconUrl = "http://openweathermap.org/img/wn/"
-     + `${data.cod != 404 ? data.weather[0].icon : null}.png`;
+     + `${data.cod !== 404 ? data.weather[0].icon : null}.png`;
 
     return (
         <div className="displayWeather">
