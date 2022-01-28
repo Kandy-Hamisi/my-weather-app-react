@@ -56,6 +56,16 @@ form button{
     flex-direction: column;
 }
 
+.myForm {
+    display: flex;
+    justify-content: center;
+
+}
+
+.myForm input {
+    margin-right: 20px ;
+}
+
 @media (max-width: 375px) {
     .myForm {
         display: flex;
@@ -66,3 +76,4 @@ form button{
         margin-bottom: 10px;
     }
 }
+
